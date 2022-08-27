@@ -282,7 +282,7 @@ const Support = () => {
                   </div>
                 </div>
                 <div class="ml-4">
-                  <button class="flex items-center justify-center  bg-sky-500 hover:bg-sky-600 rounded-xl text-white px-4 py-1 flex-shrink-0">
+                  <button class="flex items-center justify-center  bg-sky-500 rounded-xl text-white px-4 py-1 flex-shrink-0">
                     <span>Send</span>
                     <span class="ml-2">
                       <svg
