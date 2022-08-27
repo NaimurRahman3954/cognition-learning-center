@@ -11,7 +11,7 @@ const Support = () => {
               <div class="flex flex-col h-full overflow-x-auto mb-4">
                 <div class="flex flex-col h-full">
                   <div class="grid grid-cols-12 gap-y-2">
-                    <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                    <div class="col-start-1 col-end-12 p-3 rounded-lg">
                       <div class="flex flex-row items-center">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full  bg-red-400 flex-shrink-0">
                           M
@@ -25,7 +25,7 @@ const Support = () => {
                       </div>
                     </div>
 
-                    <div class="col-start-6 col-end-13 p-3 rounded-lg">
+                    <div class="col-start-2 col-end-13 p-3 rounded-lg">
                       <div class="flex items-center justify-start flex-row-reverse">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full bg-sky-500 flex-shrink-0">
                           N
@@ -40,7 +40,7 @@ const Support = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                    <div class="col-start-1 col-end-12 p-3 rounded-lg">
                       <div class="flex flex-row items-center">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full  bg-red-400 flex-shrink-0">
                           M
@@ -55,7 +55,7 @@ const Support = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                    <div class="col-start-1 col-end-12 p-3 rounded-lg">
                       <div class="flex flex-row items-center">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full  bg-red-400 flex-shrink-0">
                           M
@@ -121,7 +121,7 @@ const Support = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="col-start-6 col-end-13 p-3 rounded-lg">
+                    <div class="col-start-2 col-end-13 p-3 rounded-lg">
                       <div class="flex items-center justify-start flex-row-reverse">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full  bg-sky-500 flex-shrink-0">
                           N
@@ -140,7 +140,7 @@ const Support = () => {
                       </div>
                     </div>
 
-                    <div class="col-start-1 col-end-8 p-3 rounded-lg">
+                    <div class="col-start-1 col-end-12 p-3 rounded-lg">
                       <div class="flex flex-row items-center">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full  bg-red-400 flex-shrink-0">
                           M
@@ -153,7 +153,7 @@ const Support = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="col-start-6 col-end-13 p-3 rounded-lg">
+                    <div class="col-start-2 col-end-13 p-3 rounded-lg">
                       <div class="flex items-center justify-start flex-row-reverse">
                         <div class="flex items-center justify-center h-10 w-10 rounded-full  bg-sky-500 flex-shrink-0">
                           N

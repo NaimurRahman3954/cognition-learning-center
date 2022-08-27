@@ -18,11 +18,13 @@ const Home = () => {
           <button className="btn btn-warning mt-6 mb-24">See All →</button>
         </Link>
       </div>
-      <h1 className="text-5xl font-bold mt-16 text-center">Track Record</h1>
-      <Stats></Stats>
       <h1 className="text-5xl font-bold mt-16 text-center">247 Support</h1>
       <Support></Support>
-      <h1 className="text-5xl font-bold mt-16 text-center">Students' Review</h1>
+      <h1 className="text-5xl font-bold mt-32 text-center">Track Record</h1>
+      <Stats></Stats>
+      <h1 className="text-5xl font-bold mt-32 text-center">
+        Students' Reviews
+      </h1>
       <Reviews></Reviews>
     </div>
   )
