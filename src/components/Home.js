@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import CourseDisplay from './CourseDisplay'
 import Hero from './Hero'
 import Reviews from './Reviews'
+import Stats from './Stats'
 import Support from './Support'
 
 const Home = () => {
@@ -18,6 +19,8 @@ const Home = () => {
         </Link>
       </div>
       <h1 className="text-5xl font-bold mt-16 text-center">Track Record</h1>
+      <Stats></Stats>
+      <h1 className="text-5xl font-bold mt-16 text-center">247 Support</h1>
       <Support></Support>
       <h1 className="text-5xl font-bold mt-16 text-center">Students' Review</h1>
       <Reviews></Reviews>
