@@ -261,9 +261,9 @@ const Support = () => {
                     <input
                       type="text"
                       disabled
-                      class="flex w-full border border-slate-700 rounded-xl focus:outline-none bg-base-300 focus:border-slate-700 pl-4 h-10"
+                      class="flex w-full border border-slate-800 rounded-xl focus:outline-none bg-base-300 focus:border-slate-700 pl-4 h-10"
                     />
-                    <button class="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-slate-700 hover:text-gray-600">
+                    <button class="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-slate-700">
                       <svg
                         class="w-6 h-6"
                         fill="none"
