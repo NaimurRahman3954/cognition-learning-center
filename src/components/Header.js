@@ -156,11 +156,22 @@ const Header = () => {
             </div>
           )}
           {user?.uid && (
-            <div>
-              <span>Welcome, {user.displayName}</span>
-              <button onClick={handleSignOut} className="btn btn-sm">
-                Log Out
-              </button>
+            <div
+              className="flex items-center tooltip tooltip-bottom"
+              data-tip={user.displayName}
+            >
+              {/* <span>Welcome, {user.displayName}</span> */}
+              <div>
+                <button onClick={handleSignOut} className="btn btn-sm">
+                  Log Out
+                </button>
+              </div>
+              <div
+                className="rounded-full avatar w-12 mask mask-circle mx-2 tooltip"
+                data-tip={user.displayName}
+              >
+                <img src={user.photoURL} alt="" width={36} />
+              </div>
             </div>
           )}
         </div>
