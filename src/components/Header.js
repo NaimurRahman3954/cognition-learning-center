@@ -1,8 +1,23 @@
 import React from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../contexts/UserContext'
 import Darkmode from './Darkmode'
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext)
+  console.log('context', user)
+
+  const handleSignOut = () => {
+    logOut()
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }
+
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -47,22 +62,22 @@ const Header = () => {
                 <ul className="p-2">
                   <ul className="p-2">
                     <li>
-                      <a>Computer Science</a>
+                      <a>C Programming for Beginners</a>
                     </li>
                     <li>
-                      <a>Information Technology</a>
+                      <a>Introduction to R</a>
                     </li>
                     <li>
-                      <a>Programming Languages</a>
+                      <a>Introduction to Database</a>
                     </li>
                     <li>
-                      <a>Artificial Intelligence</a>
+                      <a>Advanced JAVA Programming for Software Development</a>
                     </li>
                     <li>
-                      <a>Machine Learning</a>
+                      <a>Data Structures And Algorithms</a>
                     </li>
                     <li>
-                      <a>Web3 Technology</a>
+                      <a>Complete HTML5, CSS3 & Bootstrap 4</a>
                     </li>
                   </ul>
                 </ul>
@@ -99,22 +114,22 @@ const Header = () => {
               </Link>
               <ul className="p-2">
                 <li>
-                  <a>Computer Science</a>
+                  <a>C Programming for Beginners</a>
                 </li>
                 <li>
-                  <a>Information Technology</a>
+                  <a>Introduction to R</a>
                 </li>
                 <li>
-                  <a>Programming Languages</a>
+                  <a>Introduction to Database</a>
                 </li>
                 <li>
-                  <a>Artificial Intelligence</a>
+                  <a>Advanced JAVA Programming for Software Development</a>
                 </li>
                 <li>
-                  <a>Machine Learning</a>
+                  <a>Data Structures And Algorithms</a>
                 </li>
                 <li>
-                  <a>Web3 Technology</a>
+                  <a>Complete HTML5, CSS3 & Bootstrap 4</a>
                 </li>
               </ul>
             </li>
@@ -130,12 +145,24 @@ const Header = () => {
           <div className="mx-2">
             <Darkmode></Darkmode>
           </div>
-          <Link className="mx-3 hidden lg:inline" to="/login">
-            Sign in
-          </Link>
-          <Link className="btn mx-1" to="/register">
-            Register
-          </Link>
+          {!user?.uid && (
+            <div>
+              <Link className="mx-3 hidden lg:inline" to="/login">
+                Log in
+              </Link>
+              <Link className="btn mx-1" to="/register">
+                Register
+              </Link>
+            </div>
+          )}
+          {user?.uid && (
+            <div>
+              <span>Welcome, {user.displayName}</span>
+              <button onClick={handleSignOut} className="btn btn-sm">
+                Log Out
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>

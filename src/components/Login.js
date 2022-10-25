@@ -1,27 +1,64 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../contexts/UserContext'
 
 const Login = () => {
-  const handleFormSubmit = (e) => {
-    e.preventDefault()
+  const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext)
+  console.log(signIn)
 
-    let email = e.target.elements.email?.value
-    let password = e.target.elements.password?.value
+  const handleFormSubmit = (event) => {
+    event.preventDefault()
 
+    const form = event.target
+    const email = form.email.value
+    const password = form.password.value
     console.log(email, password)
+
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user
+        console.log(user)
+        form.reset()
+      })
+      .catch((error) => {
+        console.error(error)
+      })
   }
+
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((result) => {
+        const user = result.user
+        console.log(user)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }
+
+  const handleGithubSignIn = () => {
+    githubSignIn()
+      .then((result) => {
+        const user = result.user
+        console.log(user)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }
+
   return (
     <div>
-      <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0">
-        <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-slate-100 shadow-md sm:max-w-lg sm:rounded-lg">
-          <h1 className="text-2xl font-medium text-primary mt-4 mb-12 text-center">
+      <div className="flex flex-col items-center min-h-screen sm:justify-center sm:pt-0">
+        <div className="w-full px-9 py-4 overflow-hidden bg-base-200 shadow-2xl sm:max-w-lg sm:rounded-lg">
+          <h1 className="text-2xl font-bold mt-4 mb-9 text-center text-gray-200">
             Log in to your account 🔐
           </h1>
           <form onSubmit={handleFormSubmit}>
             <div className="mt-4">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-gray-300 undefined"
               >
                 Email
               </label>
@@ -29,7 +66,8 @@ const Login = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="your email"
+                  placeholder="example@gmail.com"
+                  required
                   className="block w-full mt-1 p-1 px-3 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 />
               </div>
@@ -37,7 +75,7 @@ const Login = () => {
             <div className="mt-4">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700 undefined"
+                className="block text-sm font-medium text-gray-300 undefined"
               >
                 Password
               </label>
@@ -46,12 +84,13 @@ const Login = () => {
                   type="password"
                   name="password"
                   placeholder="your password"
+                  required
                   className="block w-full mt-1 p-1 px-3 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 />
               </div>
             </div>
             <a href="#" className="text-xs text-purple-600 hover:underline">
-              Forget Password?
+              Forgot Password?
             </a>
             <div className="flex items-center mt-4">
               <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
@@ -78,6 +117,7 @@ const Login = () => {
           </div>
           <div className="my-6 space-y-2">
             <button
+              onClick={handleGoogleSignIn}
               aria-label="Login with Google"
               type="button"
               className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
@@ -92,9 +132,10 @@ const Login = () => {
               <p>Login with Google</p>
             </button>
             <button
+              onClick={handleGithubSignIn}
               aria-label="Login with GitHub"
               role="button"
-              className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
+              className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
