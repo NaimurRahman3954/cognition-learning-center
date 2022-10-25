@@ -3,7 +3,7 @@ import React from 'react'
 const Blog = () => {
   return (
     <div className="mt-5">
-      <div className="text-gray-100 my-5">
+      <div className="text-gray-100 m-5">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
@@ -46,7 +46,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="text-gray-100 my-5">
+      <div className="text-gray-100 m-5">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
@@ -89,7 +89,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="text-gray-100 my-5">
+      <div className="text-gray-100 m-5">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
@@ -127,7 +127,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="text-gray-100 my-5">
+      <div className="text-gray-100 m-5">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
