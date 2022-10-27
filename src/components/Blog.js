@@ -4,25 +4,17 @@ const Blog = () => {
   return (
     <div className="mt-5">
       <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="px-2 py-1 font-bold rounded dark:bg-purple-700 dark:text-gray-200"
-            >
+            <button className="font-bold rounded btn-info px-3 py-1 my-2">
               Server
-            </a>
+            </button>
           </div>
           <div className="mt-3">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="text-2xl font-bold hover:underline"
-            >
+            <h3 className="text-2xl font-bold hover:underline">
               What is CORS?
-            </a>
+            </h3>
             <p className="mt-2 text-justify">
               Cross-Origin Resource Sharing (CORS) is an HTTP-header based
               mechanism that allows a server to indicate any origins (domain,
@@ -37,9 +29,8 @@ const Blog = () => {
           </div>
           <div className="flex items-center justify-between mt-4">
             <a
-              rel="noopener noreferrer"
               href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
-              className="hover:underline text-purple-600"
+              className="hover:underline text-purple-500"
             >
               Read more
             </a>
@@ -47,26 +38,18 @@ const Blog = () => {
         </div>
       </div>
       <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="px-2 py-1 font-bold rounded dark:bg-purple-700 dark:text-gray-200"
-            >
+            <button className="font-bold rounded btn-info px-3 py-1 my-2">
               Authentication
-            </a>
+            </button>
           </div>
           <div className="mt-3">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="text-2xl font-bold hover:underline text-justify"
-            >
+            <h3 className="text-2xl font-bold hover:underline text-justify">
               Why are you using firebase? What other options do you have to
               implement authentication?
-            </a>
+            </h3>
             <p className="mt-2 text-justify">
               Firebase Authentication provides backend services, easy-to-use
               SDKs, and ready-made UI libraries to authenticate users to your
@@ -80,9 +63,8 @@ const Blog = () => {
           </div>
           <div className="flex items-center justify-between mt-4">
             <a
-              rel="noopener noreferrer"
               href="https://firebase.google.com/docs/auth"
-              className="hover:underline text-purple-600"
+              className="hover:underline text-purple-500"
             >
               Read more
             </a>
@@ -90,25 +72,17 @@ const Blog = () => {
         </div>
       </div>
       <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="px-2 py-1 font-bold rounded dark:bg-purple-700 dark:text-gray-200"
-            >
+            <button className="font-bold rounded btn-info px-3 py-1 my-2">
               Router
-            </a>
+            </button>
           </div>
           <div className="mt-3">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="text-2xl font-bold hover:underline"
-            >
+            <h3 className="text-2xl font-bold hover:underline">
               How does the private route work?
-            </a>
+            </h3>
             <p className="mt-2 text-justify">
               The react private route component renders child components
               (children) if the user is logged in. If not logged in the user is
@@ -118,35 +92,26 @@ const Blog = () => {
           </div>
           <div className="flex items-center justify-between mt-4">
             <a
-              rel="noopener noreferrer"
               href="https://jasonwatmore.com/post/2022/06/24/react-router-6-private-route-component-to-restrict-access-to-protected-pages"
-              className="hover:underline text-purple-600"
+              className="hover:underline text-purple-500"
             >
               Read more
             </a>
           </div>
         </div>
       </div>
-      <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
+      <div className="text-gray-100 m-5 mb-12">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="px-2 py-1 font-bold rounded dark:bg-purple-700 dark:text-gray-200"
-            >
+            <button className="font-bold rounded btn-info px-3 py-1 my-2">
               Server
-            </a>
+            </button>
           </div>
           <div className="mt-3">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="text-2xl font-bold hover:underline"
-            >
+            <h3 className="text-2xl font-bold hover:underline">
               What is Node? How does Node work?
-            </a>
+            </h3>
             <p className="mt-2 text-justify">
               It is a used as backend service where javascript works on the
               server-side of the application. This way javascript is used on
@@ -157,9 +122,8 @@ const Blog = () => {
           </div>
           <div className="flex items-center justify-between mt-4">
             <a
-              rel="noopener noreferrer"
               href="https://www.geeksforgeeks.org/explain-the-working-of-node-js/"
-              className="hover:underline text-purple-600"
+              className="hover:underline text-purple-500"
             >
               Read more
             </a>

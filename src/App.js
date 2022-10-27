@@ -1,4 +1,5 @@
 import './App.css'
+import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Main from './layout/Main'
 import Home from './components/Home'
@@ -9,8 +10,9 @@ import Login from './components/Login'
 import Register from './components/Register'
 import PrivateRoute from './routes/PrivateRoute'
 import Checkout from './components/Checkout'
+import CourseDetails from './components/CourseDetails'
 
-function App() {
+function App(props) {
   const router = createBrowserRouter([
     {
       path: '/',
@@ -37,20 +39,28 @@ function App() {
           element: <FAQ></FAQ>,
         },
         {
-          path: '/checkout',
-          element: (
-            <PrivateRoute>
-              <Checkout></Checkout>
-            </PrivateRoute>
-          ),
-        },
-        {
           path: '/login',
           element: <Login></Login>,
         },
         {
           path: '/register',
           element: <Register></Register>,
+        },
+        {
+          path: '/courses/:id',
+          element: <CourseDetails></CourseDetails>,
+          loader: ({ params }) =>
+            fetch(`http://localhost:8000/courses/${params.id}`),
+        },
+        {
+          path: '/courses/:id/checkout',
+          element: (
+            <PrivateRoute>
+              <Checkout></Checkout>
+            </PrivateRoute>
+          ),
+          loader: ({ params }) =>
+            fetch(`http://localhost:8000/courses/${params.id}`),
         },
       ],
     },

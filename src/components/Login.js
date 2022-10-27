@@ -1,27 +1,36 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../contexts/UserContext'
 
 const Login = () => {
+  const [passwordError, setPasswordError] = useState('')
+  const [success, setSuccess] = useState(false)
   const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext)
-  console.log(signIn)
+  const navigate = useNavigate()
 
   const handleFormSubmit = (event) => {
     event.preventDefault()
+    setSuccess(false)
 
     const form = event.target
     const email = form.email.value
     const password = form.password.value
-    console.log(email, password)
+
+    setPasswordError('')
 
     signIn(email, password)
       .then((result) => {
         const user = result.user
         console.log(user)
+        setSuccess(true)
         form.reset()
+        navigate('/')
       })
       .catch((error) => {
-        console.error(error)
+        const errorCode = error.code
+        const errorMessage = error.message
+        setPasswordError(error.message)
       })
   }
 
@@ -30,6 +39,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user
         console.log(user)
+        navigate('/')
       })
       .catch((error) => {
         console.error(error)
@@ -41,16 +51,15 @@ const Login = () => {
       .then((result) => {
         const user = result.user
         console.log(user)
+        navigate('/')
       })
-      .catch((error) => {
-        console.error(error)
-      })
+      .catch((error) => {})
   }
 
   return (
     <div>
       <div className="flex flex-col items-center min-h-screen sm:justify-center sm:pt-0">
-        <div className="w-full px-9 py-4 overflow-hidden bg-base-200 shadow-2xl sm:max-w-lg sm:rounded-lg">
+        <div className="w-full px-9 py-4 overflow-hidden bg-base-200 shadow-2xl sm:max-w-lg sm:rounded-lg mb-12">
           <h1 className="text-2xl font-bold mt-4 mb-9 text-center text-gray-200">
             Log in to your account 🔐
           </h1>
@@ -89,9 +98,13 @@ const Login = () => {
                 />
               </div>
             </div>
-            <a href="#" className="text-xs text-purple-600 hover:underline">
+            <a href="#" className="text-xs text-info hover:underline">
               Forgot Password?
             </a>
+            <p className="text-danger my-2 text-secondary">{passwordError}</p>
+            {success && (
+              <p className="text-success">User created successfully!</p>
+            )}
             <div className="flex items-center mt-4">
               <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
                 Login
@@ -103,7 +116,7 @@ const Login = () => {
             <span>
               <Link
                 to="/register"
-                className="text-purple-600 hover:underline"
+                className="text-info hover:underline"
                 href="#"
               >
                 Register

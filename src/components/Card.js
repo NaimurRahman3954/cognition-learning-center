@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = (props) => {
-  const { title, url, difficulty, duration, students, price } = props.course
+  const { id, title, url, duration, students, price } = props.course
   return (
     <div className="m-5">
       <div className="card w-96 bg-base-200 shadow-2xl">
@@ -28,14 +29,47 @@ const Card = (props) => {
               </svg>{' '}
               {duration} hours
             </div>
-            <div className="badge badge-outline">৳ {difficulty}</div>
+            <div className="badge badge-outline">
+              {students} students enrolled
+            </div>
           </div>
-          <div className="badge badge-info font-extrabold my-3 p-3">
+          <div className="badge badge-primary font-extrabold my-3 p-3">
             ৳ {price}
           </div>
-          <div className="card-actions justify-end w-full">
-            <button className="btn btn-outline">Learn More</button>
-            <button className="btn btn-primary">Buy Now</button>
+          <div className="flex align-middle">
+            <div className="rating rating-md pt-3">
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                className="mask mask-star-2 bg-orange-400"
+                checked
+              />
+            </div>
+            <div className="card-actions justify-end w-full">
+              <Link to={`/courses/${id}`}>
+                <button className="btn btn-outline btn-info">Learn More</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

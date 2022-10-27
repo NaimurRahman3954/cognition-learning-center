@@ -20,8 +20,8 @@ const googleProvider = new GoogleAuthProvider()
 const githubProvider = new GithubAuthProvider()
 
 const UserContext = ({ children }) => {
-  const [user, setUser] = useState({ displayName: 'Akash' })
-  //   const user = { displayName: 'Akash' }
+  const [user, setUser] = useState({ displayName: 'Naim' })
+  const [loading, setLoading] = useState(true)
 
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password)
@@ -45,6 +45,7 @@ const UserContext = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser)
+      setLoading(false)
       console.log('auth state changed', currentUser)
     })
 
@@ -55,6 +56,7 @@ const UserContext = ({ children }) => {
 
   const authInfo = {
     user,
+    loading,
     createUser,
     signIn,
     googleSignIn,
