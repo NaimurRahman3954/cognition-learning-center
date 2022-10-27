@@ -7,7 +7,7 @@ Watch the [Live Site](https://cognition-learning-center.web.app/).
 1. Navigation bar created with React Router
 2. Hero Section with Company Motto
 3. Courses on multiple tech stack
-4. Barcharts showing useful information
+4. Private checkout route
 5. Blog
 
 ## Learning Outcome
