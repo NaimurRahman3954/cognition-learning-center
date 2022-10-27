@@ -51,7 +51,9 @@ function App(props) {
           path: '/courses/:id',
           element: <CourseDetails></CourseDetails>,
           loader: ({ params }) =>
-            fetch(`http://localhost:8000/courses/${params.id}`),
+            fetch(
+              `https://cognition-learning-center-naimurrahman3954.vercel.app/courses/${params.id}`
+            ),
         },
         {
           path: '/courses/:id/checkout',
@@ -61,7 +63,9 @@ function App(props) {
             </PrivateRoute>
           ),
           loader: ({ params }) =>
-            fetch(`http://localhost:8000/courses/${params.id}`),
+            fetch(
+              `https://cognition-learning-center-naimurrahman3954.vercel.app/courses/${params.id}`
+            ),
         },
       ],
     },
