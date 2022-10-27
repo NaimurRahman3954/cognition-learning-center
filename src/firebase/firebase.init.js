@@ -5,12 +5,12 @@ import { initializeApp } from 'firebase/app'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyCpzDPu96aNzDJSmYdL7SONZp-bLu44J_E',
-  authDomain: 'cognition-learning-center.firebaseapp.com',
-  projectId: 'cognition-learning-center',
-  storageBucket: 'cognition-learning-center.appspot.com',
-  messagingSenderId: '97755697095',
-  appId: '1:97755697095:web:9e2a54d2e925f25d2c53e2',
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 }
 
 // Initialize Firebase

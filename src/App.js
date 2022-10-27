@@ -11,6 +11,7 @@ import Register from './components/Register'
 import PrivateRoute from './routes/PrivateRoute'
 import Checkout from './components/Checkout'
 import CourseDetails from './components/CourseDetails'
+import PageNotFound from './components/PageNotFound'
 
 function App(props) {
   const router = createBrowserRouter([
@@ -63,6 +64,10 @@ function App(props) {
             fetch(`http://localhost:8000/courses/${params.id}`),
         },
       ],
+    },
+    {
+      path: '*',
+      element: <PageNotFound></PageNotFound>,
     },
   ])
   return (
