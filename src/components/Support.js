@@ -3,7 +3,7 @@ import React from 'react'
 const Support = () => {
   return (
     <div>
-      <div className="container mx-auto m-9 lg:mt-6 lg:mb-32 mb-24 stats w-4/5 outline outline-1 outline-base-300 flex flex-col lg:flex-row">
+      <div className="container mx-auto m-9 lg:mt-6 lg:mb-32 mb-24 stats w-4/5 outline outline-1 outline-slate-700 flex flex-col lg:flex-row">
         <div className="stat">
           <div className="stat-figure text-warning">
             <svg
@@ -25,7 +25,7 @@ const Support = () => {
           <div className="stat-desc">Jan 1st, 2016 - Present</div>
         </div>
 
-        <div className="stat outline outline-t-1  outline-base-300">
+        <div className="stat outline outline-t-1  outline-slate-700">
           <div className="stat-figure text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
