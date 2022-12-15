@@ -3,83 +3,69 @@ import React from 'react'
 const Support = () => {
   return (
     <div>
-      <div class="container">
-        <div class="chatbox">
-          <div class="top-bar">
-            <div class="avatar">
-              <p>V</p>
-            </div>
-            <div class="name">Voldemort</div>
-            <div class="icons">
-              <i class="fas fa-phone"></i>
-              <i class="fas fa-video"></i>
-            </div>
-            <div class="menu">
-              <div class="dots"></div>
-            </div>
+      <div className="container mx-auto m-9 lg:mt-6 lg:mb-32 mb-24 stats w-4/5 outline outline-1 outline-base-300 flex flex-col lg:flex-row">
+        <div className="stat">
+          <div className="stat-figure text-warning">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+              ></path>
+            </svg>
           </div>
-          <div class="middle">
-            <div class="voldemort">
-              <div class="incoming">
-                <div class="bubble">Hey, Father's Day is coming up..</div>
-                <div class="bubble">
-                  What are you getting.. Oh, oops sorry dude.
-                </div>
-              </div>
-              <div class="outgoing">
-                <div class="bubble lower">Nah, it's cool.</div>
-                <div class="bubble">
-                  Well you should get your Dad a cologne. Here smell it. Oh
-                  wait! ...
-                </div>
-              </div>
-              <div class="typing">
-                <div class="bubble">
-                  <div class="ellipsis one"></div>
-                  <div class="ellipsis two"></div>
-                  <div class="ellipsis three"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bottom-bar">
-            <div class="chat">
-              <input type="text" placeholder="Type a message..." />
-              <button type="submit">
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </div>
-          </div>
+          <div className="stat-title font-bold">Students Served</div>
+          <div className="stat-value text-warning">310K</div>
+          <div className="stat-desc">Jan 1st, 2016 - Present</div>
         </div>
-        <div class="messages"></div>
-        <div class="profile">
-          <div class="avatar">
-            <p>H</p>
+
+        <div className="stat outline outline-t-1  outline-base-300">
+          <div className="stat-figure text-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
           </div>
-          <div class="name2">
-            Harry<p class="email">Harry@potter.com</p>
-          </div>
+          <div className="stat-title font-bold">New Registers</div>
+          <div className="stat-value text-primary">9,200</div>
+          <div className="stat-desc">↗︎ 900 (22% more than last month)</div>
         </div>
-        <ul class="people">
-          <li class="person focus">
-            <span class="title">Voldemort </span>
-            <span class="time">2:50pm</span>
-            <br />
-            <span class="preview">What are you getting... Oh, oops...</span>
-          </li>
-          <li class="person">
-            <span class="title">Ron</span>
-            <span class="time">2:25pm</span>
-            <br />
-            <span class="preview">Meet me at Hogsmeade and br/ing...</span>
-          </li>
-          <li class="person">
-            <span class="title">Hermione</span>
-            <span class="time">2:12pm</span>
-            <br />
-            <span class="preview">Have you and Ron done your hom...</span>
-          </li>
-        </ul>
+
+        <div className="stat">
+          <div className="stat-figure text-success">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              ></path>
+            </svg>
+          </div>
+          <div className="stat-title font-bold">Satisfaction</div>
+          <div className="stat-value text-success">99%</div>
+          <div className="stat-desc">99% students recommend to their peers</div>
+        </div>
       </div>
     </div>
   )
