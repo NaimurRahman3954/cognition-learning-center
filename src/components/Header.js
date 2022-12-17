@@ -80,9 +80,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="mx-2">
+          {/* <div className="mx-2">
             <Darkmode></Darkmode>
-          </div>
+          </div> */}
           {!user?.uid && (
             <div>
               <Link className="mx-3 hidden lg:inline" to="/login">
