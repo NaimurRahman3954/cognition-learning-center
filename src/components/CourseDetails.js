@@ -60,7 +60,7 @@ const CourseDetails = () => {
         <div className="divider lg:divider-horizontal py-5"> </div>
         {/* service card */}
         <div className="basis-1/3 lg:m-5 mx-auto">
-          <div className="card w-96 bg-base-200">
+          <div className="card w-96">
             <figure className="m-3 my-9 h-60">
               <img src={url} alt="" width={200} height={200} />
             </figure>
