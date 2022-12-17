@@ -31,7 +31,8 @@ const CourseDetails = () => {
                 >
                   {({ toPdf }) => (
                     <button
-                      className="btn btn-outline text-xs rounded-full"
+                      className="btn btn-outline btn-warning text-xs rounded-full tooltip tooltip-left tooltip-warning"
+                      data-tip="Download Syllabus"
                       onClick={toPdf}
                     >
                       <svg
