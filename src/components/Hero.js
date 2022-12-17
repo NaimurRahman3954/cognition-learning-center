@@ -17,7 +17,7 @@ const Hero = () => {
               The best programming boot-camp in Bangladesh 🇧🇩 <br />
             </p>
             <Link to="/courses">
-              <button className="btn btn-primary">Explore Courses</button>
+              <button className="btn btn-warning">Explore Courses</button>
             </Link>
           </div>
         </div>

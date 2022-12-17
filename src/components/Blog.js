@@ -4,10 +4,10 @@ const Blog = () => {
   return (
     <div className="mt-5">
       <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg outline outline-1 outline-slate-700 bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <button className="font-bold rounded btn-info px-3 py-1 my-2">
+            <button className="font-bold rounded btn-warning px-3 py-1 my-2">
               Server
             </button>
           </div>
@@ -30,7 +30,7 @@ const Blog = () => {
           <div className="flex items-center justify-between mt-4">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
-              className="hover:underline text-purple-500"
+              className="hover:underline text-info"
             >
               Read more
             </a>
@@ -38,10 +38,10 @@ const Blog = () => {
         </div>
       </div>
       <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg outline outline-1 outline-slate-700 bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <button className="font-bold rounded btn-info px-3 py-1 my-2">
+            <button className="font-bold rounded btn-warning px-3 py-1 my-2">
               Authentication
             </button>
           </div>
@@ -64,7 +64,7 @@ const Blog = () => {
           <div className="flex items-center justify-between mt-4">
             <a
               href="https://firebase.google.com/docs/auth"
-              className="hover:underline text-purple-500"
+              className="hover:underline text-info"
             >
               Read more
             </a>
@@ -72,10 +72,10 @@ const Blog = () => {
         </div>
       </div>
       <div className="text-gray-100 m-5">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg outline outline-1 outline-slate-700 bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <button className="font-bold rounded btn-info px-3 py-1 my-2">
+            <button className="font-bold rounded btn-warning px-3 py-1 my-2">
               Router
             </button>
           </div>
@@ -93,7 +93,7 @@ const Blog = () => {
           <div className="flex items-center justify-between mt-4">
             <a
               href="https://jasonwatmore.com/post/2022/06/24/react-router-6-private-route-component-to-restrict-access-to-protected-pages"
-              className="hover:underline text-purple-500"
+              className="hover:underline text-info"
             >
               Read more
             </a>
@@ -101,10 +101,10 @@ const Blog = () => {
         </div>
       </div>
       <div className="text-gray-100 m-5 mb-12">
-        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-base-200">
+        <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg outline outline-1 outline-slate-700 bg-base-200">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">Oct 25, 2022</span>
-            <button className="font-bold rounded btn-info px-3 py-1 my-2">
+            <button className="font-bold rounded btn-warning px-3 py-1 my-2">
               Server
             </button>
           </div>
@@ -123,7 +123,7 @@ const Blog = () => {
           <div className="flex items-center justify-between mt-4">
             <a
               href="https://www.geeksforgeeks.org/explain-the-working-of-node-js/"
-              className="hover:underline text-purple-500"
+              className="hover:underline text-info"
             >
               Read more
             </a>
