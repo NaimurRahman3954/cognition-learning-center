@@ -6,9 +6,9 @@ const Checkout = () => {
   const { title, price } = course
   return (
     <div className="hero min-h-screen">
-      <div className="card w-96 bg-base-200 text-neutral-content mb-12">
+      <div className="card bg-base-300 text-neutral-content mb-12 p-9 mx-3 outline outline-1 outline-slate-700">
         <div className="card-body items-center text-center">
-          <h2 className="card-title text-xl font-bold">{title}</h2>
+          <h2 className="card-title text-4xl font-bold">{title}</h2>
           <div className="badge badge-info font-bold my-6 p-3 mb-12">
             Price: ৳ {price} only
           </div>
