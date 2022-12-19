@@ -11,7 +11,7 @@ const Home = () => {
       <CourseDisplay></CourseDisplay>
       <div className="App">
         <Link to="/courses">
-          <button className="btn btn-primary mb-24">See All →</button>
+          <button className="btn btn-primary mt-6 mb-24">See All →</button>
         </Link>
       </div>
     </div>
