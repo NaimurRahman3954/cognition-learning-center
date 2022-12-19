@@ -98,45 +98,45 @@ const CourseDetails = () => {
                 </p>
               </div>
 
+              <div className="rating rating-sm">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  className="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+              </div>
+
               <div className="badge badge-primary font-extrabold my-6 p-3">
                 ৳ {price}
               </div>
-              <div className="flex align-middle">
-                <div className="rating rating-sm pt-3">
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
-                  />
-                  <input
-                    type="radio"
-                    name="rating-2"
-                    className="mask mask-star-2 bg-orange-400"
-                    checked
-                  />
-                </div>
-                <div className="card-actions justify-end w-full">
-                  <Link to={`/courses/${id}/checkout`}>
-                    <button className="btn btn-outline btn-warning">
-                      Get Premium Access
-                    </button>
-                  </Link>
-                </div>
+
+              <div className="card-actions w-full mt-6">
+                <Link to={`/courses/${id}/checkout`}>
+                  <button className="btn btn-outline btn-warning">
+                    Get Premium Access
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
