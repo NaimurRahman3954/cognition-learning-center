@@ -16,7 +16,7 @@ const CourseDetails = () => {
     <div>
       <div className="flex lg:flex-row my-5 flex-col-reverse container mx-auto">
         {/* description card */}
-        <div className="basis-2/3 m-5 card card-side bg-base-200 shadow-2xl">
+        <div className="basis-2/3 m-5 card card-side">
           <div className="flex">
             <div className="card-body" ref={ref}>
               <div className="flex justify-between ">
@@ -46,9 +46,9 @@ const CourseDetails = () => {
               <p>✅ Real life projects</p>
               <p>✅ Professional certificate</p>
               <p>✅ Life-time access</p>
-              <div className="card-actions justify-end">
+              <div className="card-actions mt-6">
                 <Link to={`/courses/${id}/checkout`}>
-                  <button className="btn btn-primary">
+                  <button className="btn btn-warning">
                     Get Premium Access
                   </button>
                 </Link>
