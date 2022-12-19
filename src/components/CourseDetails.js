@@ -132,7 +132,7 @@ const CourseDetails = () => {
                 </div>
                 <div className="card-actions justify-end w-full">
                   <Link to={`/courses/${id}/checkout`}>
-                    <button className="btn btn-outline btn-info">
+                    <button className="btn btn-outline btn-warning">
                       Get Premium Access
                     </button>
                   </Link>
