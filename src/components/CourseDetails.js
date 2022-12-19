@@ -98,7 +98,7 @@ const CourseDetails = () => {
                 </p>
               </div>
 
-              <div className="rating rating-sm">
+              <div className="rating rating-sm my-3">
                 <input
                   type="radio"
                   name="rating-2"
@@ -127,7 +127,7 @@ const CourseDetails = () => {
                 />
               </div>
 
-              <div className="badge badge-primary font-extrabold my-6 p-3">
+              <div className="badge badge-primary font-extrabold my-3 p-3">
                 ৳ {price}
               </div>
 
