@@ -5,11 +5,11 @@ const Card = (props) => {
   const { id, title, url, duration, students, price } = props.course
   return (
     <div className="m-5">
-      <div className="card w-96 bg-base-200 shadow-2xl">
+      <div className="card w-96 outline outline-1 outline-slate-700">
         <figure className="m-3 my-9 h-60">
           <img src={url} alt="" width={200} height={200} />
         </figure>
-        <div className="card-body bg-base-100">
+        <div className="card-body h-64 bg-base-300">
           <h2 className="card-title">{title}</h2>
           <div className="card-actions justify-start">
             <div className="badge badge-outline">
@@ -67,7 +67,9 @@ const Card = (props) => {
             </div>
             <div className="card-actions justify-end w-full">
               <Link to={`/courses/${id}`}>
-                <button className="btn btn-outline btn-info">Learn More</button>
+                <button className="btn btn-outline btn-warning">
+                  Learn More
+                </button>
               </Link>
             </div>
           </div>

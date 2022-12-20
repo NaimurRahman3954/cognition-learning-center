@@ -5,7 +5,7 @@ import Hero from './Hero'
 
 const Home = () => {
   return (
-    <div className="bg-dotted-spacing-4 bg-dotted-gray-700">
+    <div className="bg-dotted-spacing-4 bg-dotted-gray-800">
       <Hero></Hero>
       <h1 className="text-5xl font-bold my-12 text-center">Explore Courses</h1>
       <CourseDisplay></CourseDisplay>

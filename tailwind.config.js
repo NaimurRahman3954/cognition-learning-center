@@ -5,6 +5,16 @@ module.exports = {
     extend: {},
   },
   plugins: [require('tailwindcss-dotted-background'), require('daisyui')],
-
   mode: 'jit',
+  // daisyui: {
+  //   themes: [
+  //     {
+  //       dark: {
+  //         ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
+  //         primary: '#26bf3d',
+  //         'primary-focus': 'mediumblue',
+  //       },
+  //     },
+  //   ],
+  // },
 }
