@@ -127,7 +127,7 @@ const Support = () => {
                         </div>
                         <div class="relative ml-3 text-sm bg-base-300 py-2 px-4 shadow rounded-xl">
                           <div class="flex flex-row items-center">
-                            <button class="flex items-center justify-center bg-indigo-600 hover:bg-indigo-800 rounded-full h-8 w-10">
+                            <button class="flex items-center justify-center bg-sky-400 hover:bg-sky-600 rounded-full h-8 w-10">
                               <svg
                                 class="w-6 h-6 text-white"
                                 fill="none"
@@ -240,7 +240,7 @@ const Support = () => {
               </div>
               <div class="flex flex-row items-center h-16 rounded-xl bg-base-300 w-full px-4">
                 <div>
-                  <button class="flex items-center justify-center text-gray-400 hover:text-gray-600">
+                  <button class="flex items-center justify-center text-slate-700">
                     <svg
                       class="w-5 h-5"
                       fill="none"
@@ -261,9 +261,10 @@ const Support = () => {
                   <div class="relative w-full">
                     <input
                       type="text"
-                      class="flex w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10"
+                      disabled
+                      class="flex w-full border border-slate-700 rounded-xl focus:outline-none bg-base-300 focus:border-slate-700 pl-4 h-10"
                     />
-                    <button class="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-gray-400 hover:text-gray-600">
+                    <button class="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-slate-700 hover:text-gray-600">
                       <svg
                         class="w-6 h-6"
                         fill="none"
@@ -282,7 +283,7 @@ const Support = () => {
                   </div>
                 </div>
                 <div class="ml-4">
-                  <button class="flex items-center justify-center  bg-red-400 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0">
+                  <button class="flex items-center justify-center  bg-sky-500 hover:bg-sky-600 rounded-xl text-white px-4 py-1 flex-shrink-0">
                     <span>Send</span>
                     <span class="ml-2">
                       <svg
