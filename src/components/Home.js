@@ -9,7 +9,7 @@ const Home = () => {
       <Hero></Hero>
       <h1 className="text-5xl font-bold my-12 text-center">Explore Courses</h1>
       <CourseDisplay></CourseDisplay>
-      <div className=" App">
+      <div className="App">
         <Link to="/courses">
           <button className="btn btn-primary mb-24">See All →</button>
         </Link>
