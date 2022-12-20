@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
+import CourseDisplay from './CourseDisplay'
 import LeftSideNav from './LeftSideNav'
 
 const Courses = () => {
@@ -18,11 +19,7 @@ const Courses = () => {
         <LeftSideNav></LeftSideNav>
       </div>
       <div className="lg:basis-2/3 ">
-        <div className="flex flex-wrap align-middle justify-center">
-          {courses.map((course) => (
-            <Card key={course.id} course={course}></Card>
-          ))}
-        </div>
+        <CourseDisplay></CourseDisplay>
       </div>
     </div>
   )

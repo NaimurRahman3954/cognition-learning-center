@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-100 bg-dotted-spacing-4 bg-dotted-gray-700">
+      <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse mb-12">
           <img
             src="https://content.techgig.com/photo/77087595/Guide-How-to-build-career-as-a-programmer-without-college-degree.jpg"

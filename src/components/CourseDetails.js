@@ -56,6 +56,7 @@ const CourseDetails = () => {
             </div>
           </div>
         </div>
+        {/* divider */}
         <div className="divider lg:divider-horizontal py-5"> </div>
         {/* service card */}
         <div className="basis-1/3 lg:m-5 mx-auto">
