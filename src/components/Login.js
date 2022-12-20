@@ -147,7 +147,6 @@ const Login = () => {
             <button
               onClick={handleGithubSignIn}
               aria-label="Login with GitHub"
-              role="button"
               className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400"
             >
               <svg

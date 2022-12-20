@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -10,6 +9,7 @@ const Home = () => {
           <img
             src="https://content.techgig.com/photo/77087595/Guide-How-to-build-career-as-a-programmer-without-college-degree.jpg"
             className="max-w-lg rounded-lg shadow-2xl"
+            alt="#"
           />
           <div className="m-5">
             <h1 className="text-5xl font-bold">Cognition Learning Center!</h1>
