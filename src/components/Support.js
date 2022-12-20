@@ -3,7 +3,6 @@ import React from 'react'
 const Support = () => {
   return (
     <div>
-      {/* -------- */}
       <div class="flex justify-center antialiased">
         <div class="w-full lg:w-4/5 overflow-x-hidden">
           <div class="flex flex-col flex-auto h-full p-6 text-white">
